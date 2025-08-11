@@ -3,488 +3,536 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StreamVault - Premium Global Video Platform | Music, Gaming, Education & Entertainment</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="StreamVault is the ultimate global video platform featuring thousands of premium music videos, gaming content, educational tutorials, and entertainment from around the world. Stream free high-quality videos.">
-    <meta name="keywords" content="video platform, streaming, music videos, gaming content, education, entertainment, kids videos, global platform, free streaming, StreamVault">
-    <meta name="author" content="StreamVault">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.vinnesia.my.id/">
-    
-    <!-- Open Graph / Facebook -->
+    <title>VIN NESIA - Premium Video Streaming Experience</title>
+    <meta name="description" content="Watch premium legal videos, movies, series, anime, and documentaries from YouTube, educational content, and more on VIN NESIA - your ultimate streaming destination.">
+    <meta name="keywords" content="streaming, videos, movies, series, anime, documentaries, YouTube, legal streaming, VIN NESIA">
+    <meta name="author" content="VIN NESIA">
+    <meta property="og:title" content="VIN NESIA - Premium Video Streaming">
+    <meta property="og:description" content="Premium legal video streaming platform with movies, series, anime and educational content">
+    <meta property="og:url" content="https://www.vinnesia.my.id">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.vinnesia.my.id/">
-    <meta property="og:title" content="StreamVault - Premium Global Video Platform">
-    <meta property="og:description" content="Discover thousands of premium videos: music, gaming, education & entertainment from around the world. Free streaming platform.">
-    <meta property="og:image" content="https://www.vinnesia.my.id/og-streamvault.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.vinnesia.my.id/">
-    <meta property="twitter:title" content="StreamVault - Global Video Platform">
-    <meta property="twitter:description" content="Premium streaming platform with music, gaming, education & entertainment content worldwide.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCIgeTE9IjAiIHgyPSIzMiIgeTI9IjMyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzY2N2VlYSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5M2ZiIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9InVybCgjYSkiLz48cGF0aCBkPSJNMTEgOUwyMSAxNkwxMSAyM1Y5WiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==">
+    <link rel="canonical" href="https://www.vinnesia.my.id">
     
     <style>
-        :root {
-            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --accent-gradient: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
-            --dark-bg: #0f0f23;
-            --darker-bg: #1a1a2e;
-            --card-bg: rgba(255, 255, 255, 0.08);
-            --glass-bg: rgba(255, 255, 255, 0.1);
-            --text-primary: #ffffff;
-            --text-secondary: rgba(255, 255, 255, 0.8);
-            --text-muted: rgba(255, 255, 255, 0.6);
-            --border-color: rgba(255, 255, 255, 0.1);
-            --accent-color: #f093fb;
-            --success-color: #4ade80;
-            --warning-color: #fbbf24;
-        }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
-            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background: var(--primary-gradient);
-            color: var(--text-primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3a 100%);
+            color: #ffffff;
             line-height: 1.6;
-            min-height: 100vh;
-            overflow-x: hidden;
         }
 
-        /* Header */
-        .header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(15, 15, 35, 0.95);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border-color);
-            transition: all 0.3s ease;
-        }
-
-        .header-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 1.5em;
-            font-weight: 800;
-            text-decoration: none;
-            color: var(--text-primary);
-            transition: all 0.3s ease;
-        }
-
-        .logo:hover {
-            transform: scale(1.05);
-        }
-
-        .logo-icon {
-            width: 45px;
-            height: 45px;
-            background: var(--accent-gradient);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3em;
-            box-shadow: 0 8px 25px rgba(240, 147, 251, 0.3);
-        }
-
-        .logo-text {
-            background: var(--accent-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .search-container {
-            flex: 1;
-            max-width: 600px;
-            position: relative;
-        }
-
-        .search-box {
-            width: 100%;
-            padding: 15px 60px 15px 20px;
-            border: 2px solid var(--border-color);
-            border-radius: 30px;
-            background: var(--glass-bg);
-            color: var(--text-primary);
-            font-size: 16px;
-            backdrop-filter: blur(20px);
-            transition: all 0.3s ease;
-            font-family: inherit;
-        }
-
-        .search-box:focus {
-            outline: none;
-            border-color: var(--accent-color);
-            box-shadow: 0 0 30px rgba(240, 147, 251, 0.4);
-            background: rgba(255, 255, 255, 0.15);
-        }
-
-        .search-box::placeholder {
-            color: var(--text-muted);
-        }
-
-        .search-btn {
-            position: absolute;
-            right: 6px;
-            top: 6px;
-            width: 45px;
-            height: 45px;
-            border: none;
-            background: var(--accent-gradient);
-            border-radius: 50%;
-            color: white;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            font-size: 18px;
-        }
-
-        .search-btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 8px 25px rgba(240, 147, 251, 0.4);
-        }
-
-        .stats-info {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            font-size: 0.9em;
-            color: var(--text-secondary);
-            white-space: nowrap;
-        }
-
-        .stats-badge {
-            background: var(--glass-bg);
-            padding: 8px 15px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--border-color);
-        }
-
-        /* Navigation Categories */
-        .nav-categories {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 20px 0;
-            overflow-x: auto;
-            scrollbar-width: none;
-        }
-
-        .nav-categories::-webkit-scrollbar {
-            display: none;
-        }
-
-        .categories-container {
+        .container {
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        .categories-list {
-            display: flex;
-            gap: 15px;
-            white-space: nowrap;
-        }
-
-        .category-btn {
-            padding: 12px 24px;
-            border: 2px solid var(--border-color);
-            border-radius: 30px;
-            background: var(--glass-bg);
-            color: var(--text-primary);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            transition: all 0.3s ease;
+        /* Header */
+        header {
+            background: rgba(15, 15, 35, 0.95);
             backdrop-filter: blur(10px);
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .category-btn::before {
-            content: '';
-            position: absolute;
+            position: fixed;
             top: 0;
-            left: -100%;
             width: 100%;
-            height: 100%;
-            background: var(--accent-gradient);
-            transition: left 0.3s ease;
-            z-index: -1;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .category-btn:hover::before,
-        .category-btn.active::before {
-            left: 0;
-        }
-
-        .category-btn:hover,
-        .category-btn.active {
-            border-color: transparent;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            text-align: center;
-            margin-bottom: 50px;
-            padding: 60px 20px;
-            background: var(--glass-bg);
-            border-radius: 25px;
-            backdrop-filter: blur(30px);
-            border: 1px solid var(--border-color);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 30% 40%, rgba(240, 147, 251, 0.1), transparent 70%);
-            z-index: -1;
-        }
-
-        .hero-title {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 900;
-            margin-bottom: 20px;
-            background: var(--accent-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1.2;
-        }
-
-        .hero-subtitle {
-            font-size: clamp(1.1rem, 2vw, 1.3rem);
-            color: var(--text-secondary);
-            margin-bottom: 30px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 40px;
-        }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 2em;
-            font-weight: bold;
-            background: var(--accent-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            display: block;
-        }
-
-        .stat-label {
-            color: var(--text-muted);
-            font-size: 0.9em;
-        }
-
-        /* Videos Grid */
-        .section {
-            margin-bottom: 50px;
-        }
-
-        .section-header {
+        nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-            gap: 15px;
+            padding: 15px 0;
         }
 
-        .section-title {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--text-primary);
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        .view-all-btn {
-            padding: 10px 20px;
-            background: transparent;
-            border: 2px solid var(--accent-color);
-            color: var(--accent-color);
-            border-radius: 25px;
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            color: #ffffff;
             text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
+            transition: color 0.3s ease;
+            font-weight: 500;
         }
 
-        .view-all-btn:hover {
-            background: var(--accent-color);
+        .nav-menu a:hover {
+            color: #ff6b35;
+        }
+
+        .search-container {
+            position: relative;
+        }
+
+        .search-box {
+            padding: 10px 40px 10px 15px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.1);
             color: white;
+            width: 300px;
+            font-size: 14px;
+        }
+
+        .search-box::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #ff6b35;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23ff6b35"/><stop offset="100%" style="stop-color:%23f7931e"/></linearGradient></defs><rect width="1200" height="600" fill="url(%23bg)" opacity="0.1"/></svg>');
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
             transform: translateY(-2px);
         }
 
-        .videos-grid {
+        /* Category Tabs */
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0 30px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 12px 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .tab-btn.active,
+        .tab-btn:hover {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+
+        /* Video Grid */
+        .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 25px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .video-card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(20px);
-            border-radius: 18px;
-            padding: 20px;
-            border: 1px solid var(--border-color);
-            transition: all 0.3s ease;
-            position: relative;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
             overflow: hidden;
-        }
-
-        .video-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 2px;
-            background: var(--accent-gradient);
-            transition: left 0.3s ease;
-        }
-
-        .video-card:hover::before {
-            left: 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .video-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-            border-color: rgba(240, 147, 251, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.2);
         }
 
-        .video-wrapper {
+        .video-thumbnail {
             position: relative;
             width: 100%;
-            height: 0;
-            padding-bottom: 56.25%;
-            margin-bottom: 15px;
-            border-radius: 12px;
-            overflow: hidden;
-            background: var(--darker-bg);
+            height: 180px;
+            background: linear-gradient(45deg, #333, #555);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
         }
 
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 12px;
+        .play-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 107, 53, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .video-thumbnail:hover .play-icon {
+            transform: scale(1.1);
         }
 
         .video-info {
-            padding: 5px 0;
+            padding: 20px;
         }
 
         .video-title {
-            font-size: 1.1em;
-            font-weight: 600;
+            font-size: 16px;
+            font-weight: bold;
             margin-bottom: 8px;
-            color: var(--text-primary);
-            line-height: 1.3;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+            color: #ff6b35;
+        }
+
+        .video-description {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 10px;
         }
 
         .video-meta {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            margin-bottom: 12px;
-            flex-wrap: wrap;
-            gap: 8px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
         }
 
-        .video-category {
-            background: var(--accent-gradient);
+        .episode-badge {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
             color: white;
-            padding: 4px 12px;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        /* Video Player Modal */
+        .video-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 2000;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            max-width: 1200px;
+            margin: 50px auto;
+            background: rgba(15, 15, 35, 0.95);
             border-radius: 15px;
-            font-size: 0.8em;
-            font-weight: 600;
-        }
-
-        .video-duration {
-            color: var(--text-muted);
-            font-size: 0.85em;
-        }
-
-        .video-description {
-            color: var(--text-secondary);
-            font-size: 0.9em;
-            line-height: 1.4;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
             overflow: hidden;
         }
 
-        /* Loading States */
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close-btn:hover {
+            color: #ff6b35;
+        }
+
+        .player-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .main-player {
+            flex: 2;
+        }
+
+        .video-player {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+        }
+
+        .episode-list {
+            flex: 1;
+            max-height: 400px;
+            overflow-y: auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .episode-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .episode-item:hover,
+        .episode-item.active {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            transform: translateX(5px);
+        }
+
+        .episode-number {
+            background: rgba(255, 255, 255, 0.2);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(15, 15, 35, 0.95);
+            padding: 50px 0 20px;
+            margin-top: 100px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            color: #ff6b35;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b35;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(15, 15, 35, 0.98);
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .search-box {
+                width: 200px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .category-tabs {
+                gap: 10px;
+                padding: 0 10px;
+            }
+
+            .tab-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .video-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 15px;
+            }
+
+            .player-container {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .video-player {
+                height: 250px;
+            }
+
+            .episode-list {
+                max-height: 300px;
+            }
+
+            .modal-content {
+                margin: 10px;
+                border-radius: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 10px;
+            }
+
+            .logo {
+                font-size: 24px;
+            }
+
+            .search-box {
+                width: 150px;
+                font-size: 12px;
+            }
+
+            .hero {
+                height: 60vh;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 14px;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(45deg, #e55a2b, #e8821a);
+        }
+
+        /* Loading animation */
         .loading {
             display: inline-block;
-            width: 24px;
-            height: 24px;
-            border: 3px solid rgba(255, 255, 255, 0.2);
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
             border-radius: 50%;
-            border-top-color: var(--accent-color);
+            border-top-color: #ff6b35;
             animation: spin 1s ease-in-out infinite;
         }
 
@@ -492,1071 +540,637 @@
             to { transform: rotate(360deg); }
         }
 
-        .loading-card {
-            background: var(--glass-bg);
-            border-radius: 18px;
-            padding: 20px;
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 0.6; }
-            50% { opacity: 1; }
-        }
-
-        /* No Results */
-        .no-results {
-            text-align: center;
-            padding: 60px 20px;
-            color: var(--text-secondary);
-        }
-
-        .no-results-icon {
-            font-size: 4em;
-            margin-bottom: 20px;
-            opacity: 0.5;
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--darker-bg);
-            border-top: 1px solid var(--border-color);
-            padding: 40px 20px 20px;
-            text-align: center;
-            margin-top: 60px;
-        }
-
-        .footer-content {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-
-        .footer-link {
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-link:hover {
-            color: var(--accent-color);
-        }
-
-        .footer-text {
-            color: var(--text-muted);
-            font-size: 0.9em;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-wrap: wrap;
-                gap: 15px;
-            }
-            
-            .search-container {
-                order: 3;
-                flex-basis: 100%;
-            }
-            
-            .stats-info {
-                display: none;
-            }
-            
-            .categories-list {
-                padding-bottom: 5px;
-            }
-            
-            .videos-grid {
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-                gap: 20px;
-            }
-            
-            .hero-stats {
-                gap: 20px;
-            }
-            
-            .section-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 20px 15px;
-            }
-            
-            .hero-section {
-                padding: 40px 15px;
-                margin-bottom: 30px;
-            }
-            
-            .videos-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .video-card {
-                padding: 15px;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.6s ease forwards;
-        }
-
-        /* Scroll to Top */
-        .scroll-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background: var(--accent-gradient);
-            border: none;
-            border-radius: 50%;
-            color: white;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        /* Fade in animation */
+        .fade-in {
             opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 100;
-            font-size: 18px;
+            animation: fadeIn 0.5s ease-in-out forwards;
         }
 
-        .scroll-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .scroll-top:hover {
-            transform: scale(1.1);
+        @keyframes fadeIn {
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-content">
-            <a href="#" class="logo">
-                <div class="logo-icon">▶</div>
-                <span class="logo-text">StreamVault</span>
-            </a>
-            
+    <header>
+        <nav class="container">
+            <div class="logo">VIN NESIA</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#series">Series</a></li>
+                <li><a href="#anime">Anime</a></li>
+                <li><a href="#documentaries">Documentaries</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
             <div class="search-container">
-                <input type="text" class="search-box" placeholder="Search thousands of videos..." id="searchInput">
-                <button class="search-btn" id="searchBtn">🔍</button>
+                <input type="text" class="search-box" placeholder="Search videos..." id="searchBox">
+                <button class="search-btn" onclick="searchVideos()">🔍</button>
             </div>
-            
-            <div class="stats-info">
-                <div class="stats-badge">🌍 Global</div>
-                <div class="stats-badge">📺 2.5K+ Videos</div>
-            </div>
-        </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </nav>
     </header>
 
-    <!-- Navigation Categories -->
-    <nav class="nav-categories">
-        <div class="categories-container">
-            <div class="categories-list">
-                <button class="category-btn active" data-category="all">🔥 All Categories</button>
-                <button class="category-btn" data-category="music">🎵 Music Videos</button>
-                <button class="category-btn" data-category="gaming">🎮 Gaming</button>
-                <button class="category-btn" data-category="education">📚 Education</button>
-                <button class="category-btn" data-category="entertainment">🎭 Entertainment</button>
-                <button class="category-btn" data-category="kids">👶 Kids Content</button>
-                <button class="category-btn" data-category="sports">⚽ Sports</button>
-                <button class="category-btn" data-category="tech">💻 Technology</button>
-                <button class="category-btn" data-category="cooking">👨‍🍳 Cooking</button>
-                <button class="category-btn" data-category="travel">✈️ Travel</button>
-                <button class="category-btn" data-category="fitness">💪 Fitness</button>
-                <button class="category-btn" data-category="comedy">😂 Comedy</button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Hero Section -->
-        <section class="hero-section fade-in-up">
-            <h1 class="hero-title">Welcome to StreamVault</h1>
-            <p class="hero-subtitle">Discover thousands of premium videos from around the world. Music, gaming, education, entertainment and more - all in one place.</p>
-            
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">2.5K+</span>
-                    <span class="stat-label">Videos</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">12</span>
-                    <span class="stat-label">Categories</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">Streaming</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Free</span>
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content fade-in">
+                    <h1>Welcome to VIN NESIA</h1>
+                    <p>Your Premium Destination for Legal Video Streaming</p>
+                    <p>Discover movies, series, anime, documentaries and educational content from trusted platforms</p>
+                    <a href="#movies" class="cta-button">Start Watching</a>
                 </div>
             </div>
         </section>
 
-        <!-- Videos Content -->
-        <div id="videosContent">
-            <!-- Trending Music Videos -->
-            <section class="section fade-in-up">
-                <div class="section-header">
-                    <h2 class="section-title">🔥 Trending Music Videos</h2>
-                    <a href="#" class="view-all-btn">View All</a>
-                </div>
-                <div class="videos-grid">
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk" title="Despacito" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Luis Fonsi - Despacito ft. Daddy Yankee</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Music</span>
-                                <span class="video-duration">4:42</span>
-                            </div>
-                            <p class="video-description">The global phenomenon that took the world by storm. Latin music at its finest with billions of views.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/YQHsXMglC9A" title="Adele Hello" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Adele - Hello (Official Music Video)</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Music</span>
-                                <span class="video-duration">6:07</span>
-                            </div>
-                            <p class="video-description">Adele's powerful comeback single that dominated charts worldwide. Emotional ballad perfection.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/fJ9rUzIMcZQ" title="Bohemian Rhapsody" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Queen – Bohemian Rhapsody (Official Video)</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Music</span>
-                                <span class="video-duration">5:55</span>
-                            </div>
-                            <p class="video-description">The legendary masterpiece by Queen. A timeless classic that redefined music videos forever.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/7qirrV8w5SQ" title="Gangnam Style" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">PSY - GANGNAM STYLE (Official Music Video)</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Music</span>
-                                <span class="video-duration">4:13</span>
-                            </div>
-                            <p class="video-description">The K-pop sensation that broke the internet. First video to reach 1 billion views on YouTube.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Gaming Content -->
-            <section class="section fade-in-up">
-                <div class="section-header">
-                    <h2 class="section-title">🎮 Popular Gaming Content</h2>
-                    <a href="#" class="view-all-btn">View All</a>
-                </div>
-                <div class="videos-grid">
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/2WeX41WfOsY" title="Minecraft" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Minecraft - Official Trailer</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Gaming</span>
-                                <span class="video-duration">1:55</span>
-                            </div>
-                            <p class="video-description">The game that defined a generation. Build, explore, and survive in infinite worlds.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/pAgnJDJN4VA" title="Among Us" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Among Us - Official Gameplay Trailer</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Gaming</span>
-                                <span class="video-duration">2:24</span>
-                            </div>
-                            <p class="video-description">The social deduction game that took over streaming. Find the impostor among your crew!</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/TcZKDSk4wP4" title="Fortnite" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Fortnite - Battle Royale Trailer</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Gaming</span>
-                                <span class="video-duration">2:17</span>
-                            </div>
-                            <p class="video-description">The battle royale phenomenon. 100 players, one island, last one standing wins!</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/5AVOpGZJwQs" title="Valorant" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">VALORANT - Official Launch Trailer</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Gaming</span>
-                                <span class="video-duration">3:33</span>
-                            </div>
-                            <p class="video-description">Riot Games' tactical FPS. Precise gunplay meets unique agent abilities in 5v5 matches.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Educational Content -->
-            <section class="section fade-in-up">
-                <div class="section-header">
-                    <h2 class="section-title">📚 Top Educational Videos</h2>
-                    <a href="#" class="view-all-btn">View All</a>
-                </div>
-                <div class="videos-grid">
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/wJyUtbn0O5Y" title="TED Ed" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">How Does Your Brain Work? - TED-Ed</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Education</span>
-                                <span class="video-duration">4:31</span>
-                            </div>
-                            <p class="video-description">Explore the fascinating world of neuroscience and discover how your brain processes information.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/V8UJ_gNuzjE" title="Khan Academy" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Introduction to Calculus - Khan Academy</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Education</span>
-                                <span class="video-duration">12:47</span>
-                            </div>
-                            <p class="video-description">Master the fundamentals of calculus with clear explanations and practical examples.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/YQZ2UeOTO3I" title="Crash Course" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">World History Crash Course</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Education</span>
-                                <span class="video-duration">11:23</span>
-                            </div>
-                            <p class="video-description">Journey through world history with engaging storytelling and comprehensive analysis.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/rStL7niR7gs" title="MIT Lectures" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Introduction to Programming - MIT</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Education</span>
-                                <span class="video-duration">48:27</span>
-                            </div>
-                            <p class="video-description">Learn programming fundamentals from MIT's renowned computer science curriculum.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Entertainment -->
-            <section class="section fade-in-up">
-                <div class="section-header">
-                    <h2 class="section-title">🎭 Entertainment & Comedy</h2>
-                    <a href="#" class="view-all-btn">View All</a>
-                </div>
-                <div class="videos-grid">
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Roll" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Rick Astley - Never Gonna Give You Up</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Entertainment</span>
-                                <span class="video-duration">3:33</span>
-                            </div>
-                            <p class="video-description">The internet's most famous prank video. You know the rules, and so do I!</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/QH2-TGUlwu4" title="Nyan Cat" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Nyan Cat [original]</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Entertainment</span>
-                                <span class="video-duration">3:37</span>
-                            </div>
-                            <p class="video-description">The legendary rainbow cat that became an internet sensation and meme culture icon.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="Me at the zoo" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Me at the zoo - First YouTube Video</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Entertainment</span>
-                                <span class="video-duration">0:19</span>
-                            </div>
-                            <p class="video-description">The very first video uploaded to YouTube. A piece of internet history!</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" title="Keyboard Cat" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Keyboard Cat - The Original</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Entertainment</span>
-                                <span class="video-duration">0:54</span>
-                            </div>
-                            <p class="video-description">The legendary feline pianist that spawned countless memes and viral videos.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Kids Content -->
-            <section class="section fade-in-up">
-                <div class="section-header">
-                    <h2 class="section-title">👶 Kids & Family Content</h2>
-                    <a href="#" class="view-all-btn">View All</a>
-                </div>
-                <div class="videos-grid">
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/XqZsoesa55w" title="Baby Shark" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Baby Shark Dance | Most Viewed Video</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Kids</span>
-                                <span class="video-duration">2:17</span>
-                            </div>
-                            <p class="video-description">The most-watched video on YouTube! A catchy song that kids and parents love worldwide.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/71h8MZshGSs" title="Cocomelon" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">CoComelon - Nursery Rhymes Collection</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Kids</span>
-                                <span class="video-duration">54:19</span>
-                            </div>
-                            <p class="video-description">Educational and entertaining nursery rhymes for children. Learning made fun!</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/F4tHL8reNCs" title="Peppa Pig" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Peppa Pig Official Channel</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Kids</span>
-                                <span class="video-duration">47:02</span>
-                            </div>
-                            <p class="video-description">Join Peppa Pig and her family in fun adventures that teach valuable life lessons.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/hFcLyDb6niA" title="Paw Patrol" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">PAW Patrol - Official Trailer</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Kids</span>
-                                <span class="video-duration">2:31</span>
-                            </div>
-                            <p class="video-description">Adventure Bay's heroic pups are ready for action! No job is too big, no pup is too small.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Technology & Science -->
-            <section class="section fade-in-up">
-                <div class="section-header">
-                    <h2 class="section-title">💻 Technology & Science</h2>
-                    <a href="#" class="view-all-btn">View All</a>
-                </div>
-                <div class="videos-grid">
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/WOoJh6oYAXE" title="SpaceX" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">SpaceX Starship Launch - Live</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Technology</span>
-                                <span class="video-duration">2:34:12</span>
-                            </div>
-                            <p class="video-description">Witness the future of space exploration with SpaceX's revolutionary Starship program.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/aircAruvnKk" title="3Blue1Brown" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">Neural Networks Explained - 3Blue1Brown</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Technology</span>
-                                <span class="video-duration">19:13</span>
-                            </div>
-                            <p class="video-description">Beautiful mathematical visualizations explaining how AI and neural networks actually work.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/0fKBhvDjuy0" title="Kurzgesagt" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">What Is Life? Is Death Real? - Kurzgesagt</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Science</span>
-                                <span class="video-duration">9:47</span>
-                            </div>
-                            <p class="video-description">Explore deep philosophical and scientific questions with beautiful animations.</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/QcUey-DVYjk" title="Veritasium" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3 class="video-title">The Science of Thinking - Veritasium</h3>
-                            <div class="video-meta">
-                                <span class="video-category">Science</span>
-                                <span class="video-duration">14:22</span>
-                            </div>
-                            <p class="video-description">Discover how your brain makes decisions and the science behind human thinking.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Loading State -->
-        <div id="loadingState" style="display: none;">
-            <div class="videos-grid">
-                <div class="loading-card">
-                    <div style="height: 180px; background: rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 15px;"></div>
-                    <div style="height: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; margin-bottom: 10px;"></div>
-                    <div style="height: 15px; background: rgba(255,255,255,0.05); border-radius: 8px; width: 60%;"></div>
-                </div>
+        <section class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" onclick="showCategory('all')">All Videos</button>
+                <button class="tab-btn" onclick="showCategory('movies')">Movies</button>
+                <button class="tab-btn" onclick="showCategory('series')">Series</button>
+                <button class="tab-btn" onclick="showCategory('anime')">Anime</button>
+                <button class="tab-btn" onclick="showCategory('documentaries')">Documentaries</button>
+                <button class="tab-btn" onclick="showCategory('educational')">Educational</button>
             </div>
-        </div>
 
-        <!-- No Results -->
-        <div id="noResults" style="display: none;">
-            <div class="no-results">
-                <div class="no-results-icon">🔍</div>
-                <h3>No videos found</h3>
-                <p>Try searching for something else or browse our categories.</p>
+            <div class="video-grid" id="videoGrid">
+                <!-- Video cards will be populated by JavaScript -->
             </div>
-        </div>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#" class="footer-link">About</a>
-                <a href="#" class="footer-link">Privacy Policy</a>
-                <a href="#" class="footer-link">Terms of Service</a>
-                <a href="#" class="footer-link">Contact</a>
-                <a href="#" class="footer-link">Help Center</a>
-                <a href="#" class="footer-link">Advertise</a>
+    <!-- Video Player Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Video Player</h2>
+                <button class="close-btn" onclick="closeModal()">×</button>
             </div>
-            <p class="footer-text">© 2025 StreamVault. All content sourced from official and legal channels worldwide. Empowering global video discovery.</p>
+            <div class="player-container">
+                <div class="main-player">
+                    <iframe class="video-player" id="videoPlayer" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="episode-list" id="episodeList">
+                    <h3>Episodes</h3>
+                    <div id="episodeContainer">
+                        <!-- Episodes will be populated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Browse</h3>
+                    <a href="#movies">Movies</a>
+                    <a href="#series">TV Series</a>
+                    <a href="#anime">Anime</a>
+                    <a href="#documentaries">Documentaries</a>
+                    <a href="#educational">Educational</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <a href="/action">Action</a>
+                    <a href="/comedy">Comedy</a>
+                    <a href="/drama">Drama</a>
+                    <a href="/thriller">Thriller</a>
+                    <a href="/sci-fi">Sci-Fi</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <a href="/help">Help Center</a>
+                    <a href="/contact">Contact Us</a>
+                    <a href="/feedback">Feedback</a>
+                    <a href="/report">Report Issue</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Terms of Service</a>
+                    <a href="/dmca">DMCA</a>
+                    <a href="/copyright">Copyright</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <a href="/blog">Blog</a>
+                    <a href="/news">News</a>
+                    <a href="/social">Social Media</a>
+                    <a href="/community">Community</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VIN NESIA. All rights reserved. | <a href="https://www.vinnesia.my.id" style="color: #ff6b35;">www.vinnesia.my.id</a></p>
+            </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scrollTop">↑</button>
-
     <script>
-        // Video database with comprehensive content
-        const videoDatabase = {
-            music: [
-                {
-                    id: 'kJQP7kiw5Fk',
-                    title: 'Luis Fonsi - Despacito ft. Daddy Yankee',
-                    category: 'Music',
-                    duration: '4:42',
-                    description: 'The global phenomenon that took the world by storm. Latin music at its finest.'
-                },
-                {
-                    id: 'YQHsXMglC9A',
-                    title: 'Adele - Hello (Official Music Video)',
-                    category: 'Music',
-                    duration: '6:07',
-                    description: 'Adele\'s powerful comeback single that dominated charts worldwide.'
-                },
-                {
-                    id: 'fJ9rUzIMcZQ',
-                    title: 'Queen – Bohemian Rhapsody (Official Video)',
-                    category: 'Music',
-                    duration: '5:55',
-                    description: 'The legendary masterpiece by Queen. A timeless classic.'
-                },
-                {
-                    id: '7qirrV8w5SQ',
-                    title: 'PSY - GANGNAM STYLE (Official Music Video)',
-                    category: 'Music',
-                    duration: '4:13',
-                    description: 'The K-pop sensation that broke the internet.'
-                }
-            ],
-            gaming: [
-                {
-                    id: '2WeX41WfOsY',
-                    title: 'Minecraft - Official Trailer',
-                    category: 'Gaming',
-                    duration: '1:55',
-                    description: 'The game that defined a generation. Build, explore, survive.'
-                },
-                {
-                    id: 'pAgnJDJN4VA',
-                    title: 'Among Us - Official Gameplay Trailer',
-                    category: 'Gaming',
-                    duration: '2:24',
-                    description: 'The social deduction game that took over streaming.'
-                },
-                {
-                    id: 'TcZKDSk4wP4',
-                    title: 'Fortnite - Battle Royale Trailer',
-                    category: 'Gaming',
-                    duration: '2:17',
-                    description: 'The battle royale phenomenon. 100 players, one winner.'
-                }
-            ],
-            education: [
-                {
-                    id: 'wJyUtbn0O5Y',
-                    title: 'How Does Your Brain Work? - TED-Ed',
-                    category: 'Education',
-                    duration: '4:31',
-                    description: 'Explore the fascinating world of neuroscience.'
-                },
-                {
-                    id: 'V8UJ_gNuzjE',
-                    title: 'Introduction to Calculus - Khan Academy',
-                    category: 'Education',
-                    duration: '12:47',
-                    description: 'Master calculus fundamentals with clear explanations.'
-                }
-            ],
-            kids: [
-                {
-                    id: 'XqZsoesa55w',
-                    title: 'Baby Shark Dance | Most Viewed Video',
-                    category: 'Kids',
-                    duration: '2:17',
-                    description: 'The most-watched video on YouTube!'
-                }
-            ]
-        };
+        // Sample video data (replace with actual YouTube video IDs from legal sources)
+        const videoData = [
+            // Movies
+            {
+                id: 'dQw4w9WgXcQ',
+                title: 'Classic Movie Collection',
+                description: 'A collection of classic movies in public domain',
+                category: 'movies',
+                type: 'single',
+                thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
+            },
+            {
+                id: 'jNQXAC9IVRw',
+                title: 'Independent Film Showcase',
+                description: 'Award-winning independent films',
+                category: 'movies',
+                type: 'single',
+                thumbnail: 'https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg'
+            },
+            // Series with episodes
+            {
+                id: 'series1',
+                title: 'Web Series: Tech Innovations',
+                description: 'Educational web series about technology',
+                category: 'series',
+                type: 'series',
+                episodes: [
+                    { id: 'M7lc1UVf-VE', title: 'Episode 1: AI Revolution', number: 1 },
+                    { id: 'QH2-TGUlwu4', title: 'Episode 2: Blockchain Future', number: 2 },
+                    { id: 'nTAhwhqls3w', title: 'Episode 3: Quantum Computing', number: 3 },
+                    { id: 'kJQP7kiw5Fk', title: 'Episode 4: IoT World', number: 4 }
+                ]
+            },
+            // Anime
+            {
+                id: 'anime1',
+                title: 'Legal Anime Collection',
+                description: 'Free anime episodes from Muse Asia',
+                category: 'anime',
+                type: 'series',
+                episodes: [
+                    { id: 'ZZ5LpwO-An4', title: 'Episode 1', number: 1 },
+                    { id: 'DdpZjMpS8Hw', title: 'Episode 2', number: 2 },
+                    { id: 'fJ9rUzIMcZQ', title: 'Episode 3', number: 3 }
+                ]
+            },
+            // Documentaries
+            {
+                id: 'HEHIE0xFCzA',
+                title: 'Nature Documentary',
+                description: 'Beautiful wildlife documentary',
+                category: 'documentaries',
+                type: 'single'
+            },
+            {
+                id: 'doc_series',
+                title: 'History Channel Series',
+                description: 'Educational history documentary series',
+                category: 'documentaries',
+                type: 'series',
+                episodes: [
+                    { id: 'kCc8FmEb1nY', title: 'Ancient Civilizations Part 1', number: 1 },
+                    { id: 'PwChME5axm0', title: 'Ancient Civilizations Part 2', number: 2 },
+                    { id: 'A_MjCqQoLLA', title: 'Medieval Times', number: 3 }
+                ]
+            },
+            // Educational
+            {
+                id: 'education1',
+                title: 'Programming Tutorial Series',
+                description: 'Learn programming from scratch',
+                category: 'educational',
+                type: 'series',
+                episodes: [
+                    { id: 'rfscVS0vtbw', title: 'HTML Basics', number: 1 },
+                    { id: 'yfoY53QXEnI', title: 'CSS Fundamentals', number: 2 },
+                    { id: 'hdI2bqOjy3c', title: 'JavaScript Intro', number: 3 },
+                    { id: 'PkZNo7MFNFg', title: 'React Basics', number: 4 }
+                ]
+            },
+            {
+                id: 'Mus_vwhTCq0',
+                title: 'Science Explained',
+                description: 'Educational content about science',
+                category: 'educational',
+                type: 'single'
+            }
+        ];
 
-        // DOM elements
-        const searchInput = document.getElementById('searchInput');
-        const searchBtn = document.getElementById('searchBtn');
-        const categoryBtns = document.querySelectorAll('.category-btn');
-        const videosContent = document.getElementById('videosContent');
-        const loadingState = document.getElementById('loadingState');
-        const noResults = document.getElementById('noResults');
-        const scrollTopBtn = document.getElementById('scrollTop');
-
-        // Current state
         let currentCategory = 'all';
-        let currentSearchTerm = '';
+        let currentVideo = null;
+        let currentEpisode = 0;
 
-        // Initialize app
+        // Initialize the page
         document.addEventListener('DOMContentLoaded', function() {
-            initializeApp();
-            setupEventListeners();
-            addAnimations();
+            displayVideos(videoData);
+            
+            // Add smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
         });
 
-        function initializeApp() {
-            // Add loading animations to existing video cards
-            const videoCards = document.querySelectorAll('.video-card');
-            videoCards.forEach((card, index) => {
-                setTimeout(() => {
-                    card.classList.add('fade-in-up');
-                }, index * 100);
-            });
+        // Display videos based on category
+        function displayVideos(videos) {
+            const videoGrid = document.getElementById('videoGrid');
+            videoGrid.innerHTML = '';
 
-            // Setup intersection observer for lazy loading
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in-up');
-                    }
-                });
-            });
-
-            document.querySelectorAll('.section').forEach(section => {
-                observer.observe(section);
+            videos.forEach((video, index) => {
+                if (currentCategory === 'all' || video.category === currentCategory) {
+                    const videoCard = createVideoCard(video, index);
+                    videoGrid.appendChild(videoCard);
+                }
             });
         }
 
-        function setupEventListeners() {
-            // Search functionality
-            searchBtn.addEventListener('click', handleSearch);
-            searchInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    handleSearch();
-                }
-            });
+        // Create video card element
+        function createVideoCard(video, index) {
+            const card = document.createElement('div');
+            card.className = 'video-card fade-in';
+            
+            const thumbnailUrl = video.type === 'single' 
+                ? `https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`
+                : `https://img.youtube.com/vi/${video.episodes[0].id}/maxresdefault.jpg`;
 
-            // Category buttons
-            categoryBtns.forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    handleCategoryChange(btn.dataset.category);
-                });
-            });
+            card.innerHTML = `
+                <div class="video-thumbnail" onclick="playVideo(${index})">
+                    <img src="${thumbnailUrl}" alt="${video.title}" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+                    <div class="play-icon">▶</div>
+                    ${video.type === 'series' ? '<div class="episode-badge">Series</div>' : ''}
+                </div>
+                <div class="video-info">
+                    <div class="video-title">${video.title}</div>
+                    <div class="video-description">${video.description}</div>
+                    <div class="video-meta">
+                        <span>${video.category.toUpperCase()}</span>
+                        <span>${video.type === 'series' ? `${video.episodes.length} Episodes` : 'Single Video'}</span>
+                    </div>
+                </div>
+            `;
 
-            // Scroll to top button
-            window.addEventListener('scroll', handleScroll);
-            scrollTopBtn.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-
-            // Header scroll effect
-            let lastScrollY = window.scrollY;
-            window.addEventListener('scroll', () => {
-                const header = document.querySelector('.header');
-                if (window.scrollY > lastScrollY && window.scrollY > 100) {
-                    header.style.transform = 'translateY(-100%)';
-                } else {
-                    header.style.transform = 'translateY(0)';
-                }
-                lastScrollY = window.scrollY;
-            });
+            return card;
         }
 
-        function handleSearch() {
-            const searchTerm = searchInput.value.trim().toLowerCase();
-            if (searchTerm === currentSearchTerm) return;
-            
-            currentSearchTerm = searchTerm;
-            showLoading();
-            
-            setTimeout(() => {
-                if (searchTerm === '') {
-                    showAllContent();
-                } else {
-                    performSearch(searchTerm);
-                }
-            }, 500);
-        }
-
-        function handleCategoryChange(category) {
-            if (category === currentCategory) return;
-            
+        // Show category
+        function showCategory(category) {
             currentCategory = category;
-            currentSearchTerm = '';
-            searchInput.value = '';
             
-            // Update active category button
-            categoryBtns.forEach(btn => btn.classList.remove('active'));
-            document.querySelector(`[data-category="${category}"]`).classList.add('active');
+            // Update active tab
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
             
-            showLoading();
+            // Filter videos
+            displayVideos(videoData);
+        }
+
+        // Play video
+        function playVideo(index) {
+            currentVideo = videoData[index];
+            currentEpisode = 0;
+            
+            const modal = document.getElementById('videoModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const videoPlayer = document.getElementById('videoPlayer');
+            const episodeList = document.getElementById('episodeList');
+            
+            modalTitle.textContent = currentVideo.title;
+            
+            if (currentVideo.type === 'single') {
+                // Single video
+                videoPlayer.src = `https://www.youtube.com/embed/${currentVideo.id}?autoplay=1&rel=0`;
+                episodeList.style.display = 'none';
+            } else {
+                // Series with episodes
+                videoPlayer.src = `https://www.youtube.com/embed/${currentVideo.episodes[0].id}?autoplay=1&rel=0`;
+                episodeList.style.display = 'block';
+                displayEpisodes();
+            }
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Display episodes
+        function displayEpisodes() {
+            const episodeContainer = document.getElementById('episodeContainer');
+            episodeContainer.innerHTML = '';
+            
+            currentVideo.episodes.forEach((episode, index) => {
+                const episodeItem = document.createElement('div');
+                episodeItem.className = `episode-item ${index === currentEpisode ? 'active' : ''}`;
+                episodeItem.onclick = () => playEpisode(index);
+                
+                episodeItem.innerHTML = `
+                    <div class="episode-number">${episode.number}</div>
+                    <div class="episode-title">${episode.title}</div>
+                `;
+                
+                episodeContainer.appendChild(episodeItem);
+            });
+        }
+
+        // Play specific episode
+        function playEpisode(episodeIndex) {
+            currentEpisode = episodeIndex;
+            const videoPlayer = document.getElementById('videoPlayer');
+            const episode = currentVideo.episodes[episodeIndex];
+            
+            videoPlayer.src = `https://www.youtube.com/embed/${episode.id}?autoplay=1&rel=0`;
+            
+            // Update active episode
+            document.querySelectorAll('.episode-item').forEach((item, index) => {
+                item.classList.toggle('active', index === episodeIndex);
+            });
+        }
+
+        // Close modal
+        function closeModal() {
+            const modal = document.getElementById('videoModal');
+            const videoPlayer = document.getElementById('videoPlayer');
+            
+            modal.style.display = 'none';
+            videoPlayer.src = '';
+            document.body.style.overflow = 'auto';
+            currentVideo = null;
+        }
+
+        // Search videos
+        function searchVideos() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+            
+            if (searchTerm.trim() === '') {
+                displayVideos(videoData);
+                return;
+            }
+            
+            const filteredVideos = videoData.filter(video => 
+                video.title.toLowerCase().includes(searchTerm) ||
+                video.description.toLowerCase().includes(searchTerm) ||
+                video.category.toLowerCase().includes(searchTerm)
+            );
+            
+            displayVideos(filteredVideos);
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Search on Enter key
+        document.getElementById('searchBox').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchVideos();
+            }
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('videoModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && document.getElementById('videoModal').style.display === 'block') {
+                closeModal();
+            }
+        });
+
+        // Lazy loading for better performance
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px 50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe video cards for animations
+        function observeVideoCards() {
+            document.querySelectorAll('.video-card').forEach(card => {
+                observer.observe(card);
+            });
+        }
+
+        // Call after videos are displayed
+        setTimeout(observeVideoCards, 100);
+
+        // Auto-play next episode feature
+        function playNextEpisode() {
+            if (currentVideo && currentVideo.type === 'series' && currentEpisode < currentVideo.episodes.length - 1) {
+                playEpisode(currentEpisode + 1);
+            }
+        }
+
+        // Add keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('videoModal').style.display === 'block' && currentVideo && currentVideo.type === 'series') {
+                switch(e.key) {
+                    case 'ArrowUp':
+                        e.preventDefault();
+                        if (currentEpisode > 0) {
+                            playEpisode(currentEpisode - 1);
+                        }
+                        break;
+                    case 'ArrowDown':
+                        e.preventDefault();
+                        if (currentEpisode < currentVideo.episodes.length - 1) {
+                            playEpisode(currentEpisode + 1);
+                        }
+                        break;
+                }
+            }
+        });
+
+        // Service Worker for PWA capabilities (optional)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(error) {
+                        console.log('ServiceWorker registration failed: ', error);
+                    });
+            });
+        }
+
+        // Add more video data dynamically
+        function addMoreVideos() {
+            const additionalVideos = [
+                {
+                    id: 'additional1',
+                    title: 'Science Documentary Series',
+                    description: 'Explore the wonders of science',
+                    category: 'documentaries',
+                    type: 'series',
+                    episodes: [
+                        { id: 'L0jdBizR2pY', title: 'The Universe', number: 1 },
+                        { id: 'VFLdIGNUKuw', title: 'Life on Earth', number: 2 },
+                        { id: 'wupToqz1e2g', title: 'Ocean Mysteries', number: 3 }
+                    ]
+                },
+                {
+                    id: 'zushunal1',
+                    title: 'Learn JavaScript',
+                    description: 'Complete JavaScript tutorial series',
+                    category: 'educational',
+                    type: 'series',
+                    episodes: [
+                        { id: 'W6NZfCO5SIk', title: 'Variables and Data Types', number: 1 },
+                        { id: 'Ukg_U3CnJWI', title: 'Functions', number: 2 },
+                        { id: 'YN4VNf-8BJY', title: 'Objects and Arrays', number: 3 },
+                        { id: 'bDLiOmoyYq8', title: 'DOM Manipulation', number: 4 },
+                        { id: '5fb2aPlgoys', title: 'Event Handling', number: 5 }
+                    ]
+                },
+                {
+                    id: 'YOYIjyYJhbs',
+                    title: 'Classic Cinema Collection',
+                    description: 'Timeless movies in public domain',
+                    category: 'movies',
+                    type: 'single'
+                },
+                {
+                    id: 'anime_collection',
+                    title: 'Anime Shorts Collection',
+                    description: 'Legal anime short films',
+                    category: 'anime',
+                    type: 'series',
+                    episodes: [
+                        { id: 'HSrk7X5x-z4', title: 'Short Film 1', number: 1 },
+                        { id: 'dQw4w9WgXcQ', title: 'Short Film 2', number: 2 },
+                        { id: 'oHg5SJYRHA0', title: 'Short Film 3', number: 3 }
+                    ]
+                }
+            ];
+
+            videoData.push(...additionalVideos);
+            displayVideos(videoData);
+        }
+
+        // Load more content on scroll (infinite scroll simulation)
+        let isLoadingMore = false;
+        window.addEventListener('scroll', function() {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 1000 && !isLoadingMore) {
+                isLoadingMore = true;
+                setTimeout(() => {
+                    if (videoData.length < 50) { // Limit to prevent too much content
+                        addMoreVideos();
+                    }
+                    isLoadingMore = false;
+                }, 1000);
+            }
+        });
+
+        // Performance optimization: Debounce search
+        let searchTimeout;
+        document.getElementById('searchBox').addEventListener('input', function() {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                searchVideos();
+            }, 300);
+        });
+
+        // Add smooth transitions for category switching
+        function showCategory(category) {
+            currentCategory = category;
+            
+            // Update active tab with smooth transition
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase().includes(category) || (category === 'all' && btn.textContent === 'All Videos')) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Fade out current videos
+            const videoGrid = document.getElementById('videoGrid');
+            videoGrid.style.opacity = '0.5';
             
             setTimeout(() => {
-                if (category === 'all') {
-                    showAllContent();
-                } else {
-                    filterByCategory(category);
-                }
-            }, 300);
+                displayVideos(videoData);
+                videoGrid.style.opacity = '1';
+                observeVideoCards();
+            }, 150);
         }
 
-        function showLoading() {
-            videosContent.style.display = 'none';
-            noResults.style.display = 'none';
-            loadingState.style.display = 'block';
-        }
+        // Add touch gestures for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
 
-        function showAllContent() {
-            loadingState.style.display = 'none';
-            noResults.style.display = 'none';
-            videosContent.style.display = 'block';
-            
-            // Add stagger animation
-            const sections = videosContent.querySelectorAll('.section');
-            sections.forEach((section, index) => {
-                section.style.opacity = '0';
-                section.style.transform = 'translateY(30px)';
-                setTimeout(() => {
-                    section.style.transition = 'all 0.6s ease';
-                    section.style.opacity = '1';
-                    section.style.transform = 'translateY(0)';
-                }, index * 100);
-            });
-        }
+        document.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        });
 
-        function performSearch(searchTerm) {
-            // Simulate search functionality
-            const allSections = videosContent.querySelectorAll('.section');
-            let hasResults = false;
+        document.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
 
-            allSections.forEach(section => {
-                const sectionTitle = section.querySelector('.section-title').textContent.toLowerCase();
-                const videoCards = section.querySelectorAll('.video-card');
-                let sectionHasResults = false;
-
-                videoCards.forEach(card => {
-                    const title = card.querySelector('.video-title').textContent.toLowerCase();
-                    const description = card.querySelector('.video-description').textContent.toLowerCase();
-                    
-                    if (title.includes(searchTerm) || description.includes(searchTerm) || sectionTitle.includes(searchTerm)) {
-                        card.style.display = 'block';
-                        sectionHasResults = true;
-                        hasResults = true;
-                    } else {
-                        card.style.display = 'none';
+        function handleSwipe() {
+            const modal = document.getElementById('videoModal');
+            if (modal.style.display === 'block' && Math.abs(touchEndX - touchStartX) > 50) {
+                if (touchEndX < touchStartX && currentVideo && currentVideo.type === 'series') {
+                    // Swipe left - next episode
+                    if (currentEpisode < currentVideo.episodes.length - 1) {
+                        playEpisode(currentEpisode + 1);
                     }
-                });
-
-                section.style.display = sectionHasResults ? 'block' : 'none';
-            });
-
-            loadingState.style.display = 'none';
-            
-            if (hasResults) {
-                videosContent.style.display = 'block';
-                noResults.style.display = 'none';
-            } else {
-                videosContent.style.display = 'none';
-                noResults.style.display = 'block';
-            }
-        }
-
-        function filterByCategory(category) {
-            const categoryMap = {
-                'music': ['music'],
-                'gaming': ['gaming'],
-                'education': ['education'],
-                'entertainment': ['entertainment'],
-                'kids': ['kids'],
-                'sports': ['sports'],
-                'tech': ['technology', 'science'],
-                'cooking': ['cooking'],
-                'travel': ['travel'],
-                'fitness': ['fitness'],
-                'comedy': ['entertainment', 'comedy']
-            };
-
-            const targetCategories = categoryMap[category] || [category];
-            const allSections = videosContent.querySelectorAll('.section');
-            let hasResults = false;
-
-            allSections.forEach(section => {
-                const sectionTitle = section.querySelector('.section-title').textContent.toLowerCase();
-                const shouldShow = targetCategories.some(cat => sectionTitle.includes(cat));
-                
-                if (shouldShow) {
-                    section.style.display = 'block';
-                    hasResults = true;
-                    
-                    // Show all cards in matching sections
-                    const videoCards = section.querySelectorAll('.video-card');
-                    videoCards.forEach(card => {
-                        card.style.display = 'block';
-                    });
-                } else {
-                    section.style.display = 'none';
                 }
-            });
-
-            loadingState.style.display = 'none';
-            
-            if (hasResults) {
-                videosContent.style.display = 'block';
-                noResults.style.display = 'none';
-            } else {
-                videosContent.style.display = 'none';
-                noResults.style.display = 'block';
+                if (touchEndX > touchStartX && currentVideo && currentVideo.type === 'series') {
+                    // Swipe right - previous episode
+                    if (currentEpisode > 0) {
+                        playEpisode(currentEpisode - 1);
+                    }
+                }
             }
         }
 
-        function handleScroll() {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * -0.5;
-            
-            // Parallax effect for hero section
-            const hero = document.querySelector('.hero-section');
-            if (hero) {
-                hero.style.transform = `translateY(${rate}px)`;
-            }
-            
-            // Show/hide scroll to top button
-            if (scrolled > 300) {
-                scrollTopBtn.classList.add('visible');
-            } else {
-                scrollTopBtn.classList.remove('visible');
-            }
-        }
-
-        function addAnimations() {
-            // Add hover effects for video cards
-            const videoCards = document.querySelectorAll('.video-card');
-            videoCards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-8px) scale(1.02)';
+        // Add fullscreen support
+        function toggleFullscreen() {
+            const modal = document.getElementById('videoModal');
+            if (!document.fullscreenElement) {
+                modal.requestFullscreen().catch(err => {
+                    console.log(`Error attempting to enable fullscreen: ${err.message}`);
                 });
-                
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
-                });
-            });
-
-            // Add typing effect to search placeholder
-            const searchBox = document.getElementById('searchInput');
-            const placeholders = [
-                'Search thousands of videos...',
-                'Find music videos...',
-                'Discover gaming content...',
-                'Explore educational videos...',
-                'Search entertainment...'
-            ];
-            
-            let placeholderIndex = 0;
-            setInterval(() => {
-                placeholderIndex = (placeholderIndex + 1) % placeholders.length;
-                searchBox.placeholder = placeholders[placeholderIndex];
-            }, 3000);
+            } else {
+                document.exitFullscreen();
+            }
         }
 
-        // Performance optimizations
-        function throttle(func, wait) {
-            let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
-                };
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-            };
+        // Add video quality selector (placeholder for future enhancement)
+        function changeVideoQuality(quality) {
+            // This would be implemented with actual video quality API
+            console.log(`Changing video quality to: ${quality}`);
         }
 
-        // Apply throttling to scroll events
-        window.addEventListener('scroll', throttle(handleScroll, 16));
-
-        // Add service worker for offline functionality
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(registration => {
-                        console.log('SW registered: ', registration);
-                    })
-                    .catch(registrationError => {
-                        console.log('SW registration failed: ', registrationError);
-                    });
-            });
-        }
-    </script>
-
-    <!-- Schema.org structured data for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "StreamVault",
-        "description": "Premium global video platform featuring music, gaming, education & entertainment content",
-        "url": "https://www.vinnesia.my.id",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://www.vinnesia.my.id/?search={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
+        // Initialize performance monitoring
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                if (window.performance && window.performance.timing) {
+                    const loadTime = window.performance.timing.loadEventEnd - window.performance.timing.navigationStart;
+                    console.log(`Page load time: ${loadTime}ms`);
+                }
+            }, 0);
+        });
     </script>
 </body>
 </html>
