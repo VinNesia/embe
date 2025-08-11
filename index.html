@@ -1,85 +1,421 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnimeStream - Video Anime & Donghua</title>
+    <title>StreamVault - Premium Global Video Platform | Music, Gaming, Education & Entertainment</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="StreamVault is the ultimate global video platform featuring thousands of premium music videos, gaming content, educational tutorials, and entertainment from around the world. Stream free high-quality videos.">
+    <meta name="keywords" content="video platform, streaming, music videos, gaming content, education, entertainment, kids videos, global platform, free streaming, StreamVault">
+    <meta name="author" content="StreamVault">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.vinnesia.my.id/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.vinnesia.my.id/">
+    <meta property="og:title" content="StreamVault - Premium Global Video Platform">
+    <meta property="og:description" content="Discover thousands of premium videos: music, gaming, education & entertainment from around the world. Free streaming platform.">
+    <meta property="og:image" content="https://www.vinnesia.my.id/og-streamvault.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.vinnesia.my.id/">
+    <meta property="twitter:title" content="StreamVault - Global Video Platform">
+    <meta property="twitter:description" content="Premium streaming platform with music, gaming, education & entertainment content worldwide.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCIgeTE9IjAiIHgyPSIzMiIgeTI9IjMyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzY2N2VlYSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5M2ZiIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9InVybCgjYSkiLz48cGF0aCBkPSJNMTEgOUwyMSAxNkwxMSAyM1Y5WiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==">
+    
     <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --accent-gradient: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+            --dark-bg: #0f0f23;
+            --darker-bg: #1a1a2e;
+            --card-bg: rgba(255, 255, 255, 0.08);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.8);
+            --text-muted: rgba(255, 255, 255, 0.6);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --accent-color: #f093fb;
+            --success-color: #4ade80;
+            --warning-color: #fbbf24;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--primary-gradient);
+            color: var(--text-primary);
+            line-height: 1.6;
             min-height: 100vh;
-            color: white;
+            overflow-x: hidden;
         }
 
+        /* Header */
         .header {
-            background: rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 15, 35, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.5em;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--accent-gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3em;
+            box-shadow: 0 8px 25px rgba(240, 147, 251, 0.3);
+        }
+
+        .logo-text {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .search-container {
+            flex: 1;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px 60px 15px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 30px;
+            background: var(--glass-bg);
+            color: var(--text-primary);
+            font-size: 16px;
+            backdrop-filter: blur(20px);
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 30px rgba(240, 147, 251, 0.4);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .search-box::placeholder {
+            color: var(--text-muted);
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 6px;
+            top: 6px;
+            width: 45px;
+            height: 45px;
+            border: none;
+            background: var(--accent-gradient);
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-size: 18px;
+        }
+
+        .search-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(240, 147, 251, 0.4);
+        }
+
+        .stats-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+
+        .stats-badge {
+            background: var(--glass-bg);
+            padding: 8px 15px;
+            border-radius: 20px;
             backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+        }
+
+        /* Navigation Categories */
+        .nav-categories {
+            background: rgba(0, 0, 0, 0.3);
             padding: 20px 0;
-            text-align: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            overflow-x: auto;
+            scrollbar-width: none;
         }
 
-        .header h1 {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        .nav-categories::-webkit-scrollbar {
+            display: none;
         }
 
-        .header p {
-            font-size: 1.1em;
-            opacity: 0.9;
+        .categories-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
+        .categories-list {
+            display: flex;
+            gap: 15px;
+            white-space: nowrap;
+        }
+
+        .category-btn {
+            padding: 12px 24px;
+            border: 2px solid var(--border-color);
+            border-radius: 30px;
+            background: var(--glass-bg);
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--accent-gradient);
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+
+        .category-btn:hover::before,
+        .category-btn.active::before {
+            left: 0;
+        }
+
+        .category-btn:hover,
+        .category-btn.active {
+            border-color: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Main Container */
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 60px 20px;
+            background: var(--glass-bg);
+            border-radius: 25px;
+            backdrop-filter: blur(30px);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 40%, rgba(240, 147, 251, 0.1), transparent 70%);
+            z-index: -1;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 20px;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
             gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        /* Videos Grid */
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .view-all-btn {
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .view-all-btn:hover {
+            background: var(--accent-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
             margin-bottom: 40px;
         }
 
         .video-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border-radius: 18px;
             padding: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .video-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: var(--accent-gradient);
+            transition: left 0.3s ease;
+        }
+
+        .video-card:hover::before {
+            left: 0;
         }
 
         .video-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .video-card h3 {
-            font-size: 1.3em;
-            margin-bottom: 15px;
-            color: #fff;
-            text-align: center;
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            border-color: rgba(240, 147, 251, 0.3);
         }
 
         .video-wrapper {
             position: relative;
             width: 100%;
             height: 0;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%;
             margin-bottom: 15px;
-            border-radius: 10px;
+            border-radius: 12px;
             overflow: hidden;
+            background: var(--darker-bg);
         }
 
         .video-wrapper iframe {
@@ -89,255 +425,1138 @@
             width: 100%;
             height: 100%;
             border: none;
-            border-radius: 10px;
+            border-radius: 12px;
         }
 
         .video-info {
-            text-align: center;
-            opacity: 0.8;
-            font-size: 0.9em;
-            line-height: 1.5;
+            padding: 5px 0;
         }
 
-        .featured-video {
-            grid-column: 1 / -1;
-            background: rgba(255, 255, 255, 0.15);
-            padding: 30px;
-            border-radius: 20px;
-            margin-bottom: 30px;
+        .video-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+            line-height: 1.3;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
 
-        .featured-video .video-wrapper {
-            max-width: 800px;
-            margin: 0 auto 20px auto;
-        }
-
-        .featured-video h2 {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #fff;
-        }
-
-        .tags {
+        .video-meta {
             display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 15px;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
             flex-wrap: wrap;
+            gap: 8px;
         }
 
-        .tag {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 5px 12px;
-            border-radius: 20px;
+        .video-category {
+            background: var(--accent-gradient);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
             font-size: 0.8em;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            font-weight: 600;
         }
 
-        .footer {
-            text-align: center;
-            padding: 30px;
-            background: rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(10px);
-            margin-top: 40px;
+        .video-duration {
+            color: var(--text-muted);
+            font-size: 0.85em;
         }
 
-        .footer p {
-            opacity: 0.7;
+        .video-description {
+            color: var(--text-secondary);
             font-size: 0.9em;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
 
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2em;
-            }
-            
-            .video-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            
-            .container {
-                padding: 20px 10px;
-            }
-        }
-
+        /* Loading States */
         .loading {
             display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 3px solid rgba(255, 255, 255, 0.3);
+            width: 24px;
+            height: 24px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
             border-radius: 50%;
-            border-top-color: #fff;
+            border-top-color: var(--accent-color);
             animation: spin 1s ease-in-out infinite;
         }
 
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
+
+        .loading-card {
+            background: var(--glass-bg);
+            border-radius: 18px;
+            padding: 20px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+
+        /* No Results */
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+
+        .no-results-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--darker-bg);
+            border-top: 1px solid var(--border-color);
+            padding: 40px 20px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--accent-color);
+        }
+
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            
+            .search-container {
+                order: 3;
+                flex-basis: 100%;
+            }
+            
+            .stats-info {
+                display: none;
+            }
+            
+            .categories-list {
+                padding-bottom: 5px;
+            }
+            
+            .videos-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 20px;
+            }
+            
+            .hero-stats {
+                gap: 20px;
+            }
+            
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .hero-section {
+                padding: 40px 15px;
+                margin-bottom: 30px;
+            }
+            
+            .videos-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .video-card {
+                padding: 15px;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Scroll to Top */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--accent-gradient);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 100;
+            font-size: 18px;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>🎌 AnimeStream</h1>
-        <p>Platform Video Anime & Donghua Legal</p>
-    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">
+                <div class="logo-icon">▶</div>
+                <span class="logo-text">StreamVault</span>
+            </a>
+            
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Search thousands of videos..." id="searchInput">
+                <button class="search-btn" id="searchBtn">🔍</button>
+            </div>
+            
+            <div class="stats-info">
+                <div class="stats-badge">🌍 Global</div>
+                <div class="stats-badge">📺 2.5K+ Videos</div>
+            </div>
+        </div>
+    </header>
 
-    <div class="container">
-        <div class="video-grid">
-            <div class="featured-video">
-                <h2>✨ Video Pilihan</h2>
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/bgo9dJB_icw" 
-                            title="Studio Ghibli Collection" 
-                            allowfullscreen>
-                    </iframe>
+    <!-- Navigation Categories -->
+    <nav class="nav-categories">
+        <div class="categories-container">
+            <div class="categories-list">
+                <button class="category-btn active" data-category="all">🔥 All Categories</button>
+                <button class="category-btn" data-category="music">🎵 Music Videos</button>
+                <button class="category-btn" data-category="gaming">🎮 Gaming</button>
+                <button class="category-btn" data-category="education">📚 Education</button>
+                <button class="category-btn" data-category="entertainment">🎭 Entertainment</button>
+                <button class="category-btn" data-category="kids">👶 Kids Content</button>
+                <button class="category-btn" data-category="sports">⚽ Sports</button>
+                <button class="category-btn" data-category="tech">💻 Technology</button>
+                <button class="category-btn" data-category="cooking">👨‍🍳 Cooking</button>
+                <button class="category-btn" data-category="travel">✈️ Travel</button>
+                <button class="category-btn" data-category="fitness">💪 Fitness</button>
+                <button class="category-btn" data-category="comedy">😂 Comedy</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero-section fade-in-up">
+            <h1 class="hero-title">Welcome to StreamVault</h1>
+            <p class="hero-subtitle">Discover thousands of premium videos from around the world. Music, gaming, education, entertainment and more - all in one place.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">2.5K+</span>
+                    <span class="stat-label">Videos</span>
                 </div>
-                <div class="video-info">
-                    <p>Koleksi musik dan scene terbaik dari Studio Ghibli - Channel resmi</p>
-                    <div class="tags">
-                        <span class="tag">Studio Ghibli</span>
-                        <span class="tag">Music</span>
-                        <span class="tag">Compilation</span>
-                    </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Streaming</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Free</span>
                 </div>
             </div>
+        </section>
 
-            <div class="video-card">
-                <h3>🔥 Anime Trending</h3>
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/PKHQuQF1S8k" 
-                            title="Crunchyroll Collection" 
-                            allowfullscreen>
-                    </iframe>
+        <!-- Videos Content -->
+        <div id="videosContent">
+            <!-- Trending Music Videos -->
+            <section class="section fade-in-up">
+                <div class="section-header">
+                    <h2 class="section-title">🔥 Trending Music Videos</h2>
+                    <a href="#" class="view-all-btn">View All</a>
                 </div>
-                <div class="video-info">
-                    <p>Kompilasi anime terpopuler dari Crunchyroll Collection</p>
-                    <div class="tags">
-                        <span class="tag">Crunchyroll</span>
-                        <span class="tag">Popular</span>
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk" title="Despacito" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Luis Fonsi - Despacito ft. Daddy Yankee</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Music</span>
+                                <span class="video-duration">4:42</span>
+                            </div>
+                            <p class="video-description">The global phenomenon that took the world by storm. Latin music at its finest with billions of views.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/YQHsXMglC9A" title="Adele Hello" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Adele - Hello (Official Music Video)</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Music</span>
+                                <span class="video-duration">6:07</span>
+                            </div>
+                            <p class="video-description">Adele's powerful comeback single that dominated charts worldwide. Emotional ballad perfection.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/fJ9rUzIMcZQ" title="Bohemian Rhapsody" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Queen – Bohemian Rhapsody (Official Video)</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Music</span>
+                                <span class="video-duration">5:55</span>
+                            </div>
+                            <p class="video-description">The legendary masterpiece by Queen. A timeless classic that redefined music videos forever.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/7qirrV8w5SQ" title="Gangnam Style" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">PSY - GANGNAM STYLE (Official Music Video)</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Music</span>
+                                <span class="video-duration">4:13</span>
+                            </div>
+                            <p class="video-description">The K-pop sensation that broke the internet. First video to reach 1 billion views on YouTube.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="video-card">
-                <h3>🐉 Donghua Special</h3>
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/YQR7qKWAz0o" 
-                            title="Chinese Animation" 
-                            allowfullscreen>
-                    </iframe>
+            <!-- Gaming Content -->
+            <section class="section fade-in-up">
+                <div class="section-header">
+                    <h2 class="section-title">🎮 Popular Gaming Content</h2>
+                    <a href="#" class="view-all-btn">View All</a>
                 </div>
-                <div class="video-info">
-                    <p>Koleksi donghua dan animasi Tiongkok terbaik</p>
-                    <div class="tags">
-                        <span class="tag">Donghua</span>
-                        <span class="tag">Chinese</span>
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/2WeX41WfOsY" title="Minecraft" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Minecraft - Official Trailer</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Gaming</span>
+                                <span class="video-duration">1:55</span>
+                            </div>
+                            <p class="video-description">The game that defined a generation. Build, explore, and survive in infinite worlds.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/pAgnJDJN4VA" title="Among Us" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Among Us - Official Gameplay Trailer</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Gaming</span>
+                                <span class="video-duration">2:24</span>
+                            </div>
+                            <p class="video-description">The social deduction game that took over streaming. Find the impostor among your crew!</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/TcZKDSk4wP4" title="Fortnite" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Fortnite - Battle Royale Trailer</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Gaming</span>
+                                <span class="video-duration">2:17</span>
+                            </div>
+                            <p class="video-description">The battle royale phenomenon. 100 players, one island, last one standing wins!</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/5AVOpGZJwQs" title="Valorant" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">VALORANT - Official Launch Trailer</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Gaming</span>
+                                <span class="video-duration">3:33</span>
+                            </div>
+                            <p class="video-description">Riot Games' tactical FPS. Precise gunplay meets unique agent abilities in 5v5 matches.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="video-card">
-                <h3>🎵 Anime Music</h3>
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/2dmZnbNLjkY" 
-                            title="Anime OST Collection" 
-                            allowfullscreen>
-                    </iframe>
+            <!-- Educational Content -->
+            <section class="section fade-in-up">
+                <div class="section-header">
+                    <h2 class="section-title">📚 Top Educational Videos</h2>
+                    <a href="#" class="view-all-btn">View All</a>
                 </div>
-                <div class="video-info">
-                    <p>Soundtrack dan opening anime terpopuler sepanjang masa</p>
-                    <div class="tags">
-                        <span class="tag">OST</span>
-                        <span class="tag">Music</span>
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/wJyUtbn0O5Y" title="TED Ed" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">How Does Your Brain Work? - TED-Ed</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Education</span>
+                                <span class="video-duration">4:31</span>
+                            </div>
+                            <p class="video-description">Explore the fascinating world of neuroscience and discover how your brain processes information.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/V8UJ_gNuzjE" title="Khan Academy" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Introduction to Calculus - Khan Academy</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Education</span>
+                                <span class="video-duration">12:47</span>
+                            </div>
+                            <p class="video-description">Master the fundamentals of calculus with clear explanations and practical examples.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/YQZ2UeOTO3I" title="Crash Course" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">World History Crash Course</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Education</span>
+                                <span class="video-duration">11:23</span>
+                            </div>
+                            <p class="video-description">Journey through world history with engaging storytelling and comprehensive analysis.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/rStL7niR7gs" title="MIT Lectures" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Introduction to Programming - MIT</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Education</span>
+                                <span class="video-duration">48:27</span>
+                            </div>
+                            <p class="video-description">Learn programming fundamentals from MIT's renowned computer science curriculum.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="video-card">
-                <h3>⚡ Action Scenes</h3>
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/VQzgI6xJEH0" 
-                            title="Epic Anime Battles" 
-                            allowfullscreen>
-                    </iframe>
+            <!-- Entertainment -->
+            <section class="section fade-in-up">
+                <div class="section-header">
+                    <h2 class="section-title">🎭 Entertainment & Comedy</h2>
+                    <a href="#" class="view-all-btn">View All</a>
                 </div>
-                <div class="video-info">
-                    <p>Kompilasi scene pertarungan epic dari berbagai anime</p>
-                    <div class="tags">
-                        <span class="tag">Action</span>
-                        <span class="tag">Battle</span>
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Roll" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Rick Astley - Never Gonna Give You Up</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Entertainment</span>
+                                <span class="video-duration">3:33</span>
+                            </div>
+                            <p class="video-description">The internet's most famous prank video. You know the rules, and so do I!</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/QH2-TGUlwu4" title="Nyan Cat" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Nyan Cat [original]</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Entertainment</span>
+                                <span class="video-duration">3:37</span>
+                            </div>
+                            <p class="video-description">The legendary rainbow cat that became an internet sensation and meme culture icon.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="Me at the zoo" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Me at the zoo - First YouTube Video</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Entertainment</span>
+                                <span class="video-duration">0:19</span>
+                            </div>
+                            <p class="video-description">The very first video uploaded to YouTube. A piece of internet history!</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" title="Keyboard Cat" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Keyboard Cat - The Original</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Entertainment</span>
+                                <span class="video-duration">0:54</span>
+                            </div>
+                            <p class="video-description">The legendary feline pianist that spawned countless memes and viral videos.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="video-card">
-                <h3>🌸 Classic Anime</h3>
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/fhBA6ynorvc" 
-                            title="Retro Anime Collection" 
-                            allowfullscreen>
-                    </iframe>
+            <!-- Kids Content -->
+            <section class="section fade-in-up">
+                <div class="section-header">
+                    <h2 class="section-title">👶 Kids & Family Content</h2>
+                    <a href="#" class="view-all-btn">View All</a>
                 </div>
-                <div class="video-info">
-                    <p>Anime klasik dan retro yang masih populer hingga kini</p>
-                    <div class="tags">
-                        <span class="tag">Classic</span>
-                        <span class="tag">Retro</span>
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/XqZsoesa55w" title="Baby Shark" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Baby Shark Dance | Most Viewed Video</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Kids</span>
+                                <span class="video-duration">2:17</span>
+                            </div>
+                            <p class="video-description">The most-watched video on YouTube! A catchy song that kids and parents love worldwide.</p>
+                        </div>
                     </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/71h8MZshGSs" title="Cocomelon" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">CoComelon - Nursery Rhymes Collection</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Kids</span>
+                                <span class="video-duration">54:19</span>
+                            </div>
+                            <p class="video-description">Educational and entertaining nursery rhymes for children. Learning made fun!</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/F4tHL8reNCs" title="Peppa Pig" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Peppa Pig Official Channel</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Kids</span>
+                                <span class="video-duration">47:02</span>
+                            </div>
+                            <p class="video-description">Join Peppa Pig and her family in fun adventures that teach valuable life lessons.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/hFcLyDb6niA" title="Paw Patrol" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">PAW Patrol - Official Trailer</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Kids</span>
+                                <span class="video-duration">2:31</span>
+                            </div>
+                            <p class="video-description">Adventure Bay's heroic pups are ready for action! No job is too big, no pup is too small.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technology & Science -->
+            <section class="section fade-in-up">
+                <div class="section-header">
+                    <h2 class="section-title">💻 Technology & Science</h2>
+                    <a href="#" class="view-all-btn">View All</a>
+                </div>
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/WOoJh6oYAXE" title="SpaceX" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">SpaceX Starship Launch - Live</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Technology</span>
+                                <span class="video-duration">2:34:12</span>
+                            </div>
+                            <p class="video-description">Witness the future of space exploration with SpaceX's revolutionary Starship program.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/aircAruvnKk" title="3Blue1Brown" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Neural Networks Explained - 3Blue1Brown</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Technology</span>
+                                <span class="video-duration">19:13</span>
+                            </div>
+                            <p class="video-description">Beautiful mathematical visualizations explaining how AI and neural networks actually work.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/0fKBhvDjuy0" title="Kurzgesagt" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">What Is Life? Is Death Real? - Kurzgesagt</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Science</span>
+                                <span class="video-duration">9:47</span>
+                            </div>
+                            <p class="video-description">Explore deep philosophical and scientific questions with beautiful animations.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/QcUey-DVYjk" title="Veritasium" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">The Science of Thinking - Veritasium</h3>
+                            <div class="video-meta">
+                                <span class="video-category">Science</span>
+                                <span class="video-duration">14:22</span>
+                            </div>
+                            <p class="video-description">Discover how your brain makes decisions and the science behind human thinking.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loadingState" style="display: none;">
+            <div class="videos-grid">
+                <div class="loading-card">
+                    <div style="height: 180px; background: rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 15px;"></div>
+                    <div style="height: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; margin-bottom: 10px;"></div>
+                    <div style="height: 15px; background: rgba(255,255,255,0.05); border-radius: 8px; width: 60%;"></div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer">
-        <p>📺 Semua video berasal dari channel resmi dan legal di YouTube</p>
-        <p>© 2025 AnimeStream - Platform Video Anime Legal</p>
-    </div>
+        <!-- No Results -->
+        <div id="noResults" style="display: none;">
+            <div class="no-results">
+                <div class="no-results-icon">🔍</div>
+                <h3>No videos found</h3>
+                <p>Try searching for something else or browse our categories.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#" class="footer-link">About</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="#" class="footer-link">Contact</a>
+                <a href="#" class="footer-link">Help Center</a>
+                <a href="#" class="footer-link">Advertise</a>
+            </div>
+            <p class="footer-text">© 2025 StreamVault. All content sourced from official and legal channels worldwide. Empowering global video discovery.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
 
     <script>
-        // Add loading animation while videos load
+        // Video database with comprehensive content
+        const videoDatabase = {
+            music: [
+                {
+                    id: 'kJQP7kiw5Fk',
+                    title: 'Luis Fonsi - Despacito ft. Daddy Yankee',
+                    category: 'Music',
+                    duration: '4:42',
+                    description: 'The global phenomenon that took the world by storm. Latin music at its finest.'
+                },
+                {
+                    id: 'YQHsXMglC9A',
+                    title: 'Adele - Hello (Official Music Video)',
+                    category: 'Music',
+                    duration: '6:07',
+                    description: 'Adele\'s powerful comeback single that dominated charts worldwide.'
+                },
+                {
+                    id: 'fJ9rUzIMcZQ',
+                    title: 'Queen – Bohemian Rhapsody (Official Video)',
+                    category: 'Music',
+                    duration: '5:55',
+                    description: 'The legendary masterpiece by Queen. A timeless classic.'
+                },
+                {
+                    id: '7qirrV8w5SQ',
+                    title: 'PSY - GANGNAM STYLE (Official Music Video)',
+                    category: 'Music',
+                    duration: '4:13',
+                    description: 'The K-pop sensation that broke the internet.'
+                }
+            ],
+            gaming: [
+                {
+                    id: '2WeX41WfOsY',
+                    title: 'Minecraft - Official Trailer',
+                    category: 'Gaming',
+                    duration: '1:55',
+                    description: 'The game that defined a generation. Build, explore, survive.'
+                },
+                {
+                    id: 'pAgnJDJN4VA',
+                    title: 'Among Us - Official Gameplay Trailer',
+                    category: 'Gaming',
+                    duration: '2:24',
+                    description: 'The social deduction game that took over streaming.'
+                },
+                {
+                    id: 'TcZKDSk4wP4',
+                    title: 'Fortnite - Battle Royale Trailer',
+                    category: 'Gaming',
+                    duration: '2:17',
+                    description: 'The battle royale phenomenon. 100 players, one winner.'
+                }
+            ],
+            education: [
+                {
+                    id: 'wJyUtbn0O5Y',
+                    title: 'How Does Your Brain Work? - TED-Ed',
+                    category: 'Education',
+                    duration: '4:31',
+                    description: 'Explore the fascinating world of neuroscience.'
+                },
+                {
+                    id: 'V8UJ_gNuzjE',
+                    title: 'Introduction to Calculus - Khan Academy',
+                    category: 'Education',
+                    duration: '12:47',
+                    description: 'Master calculus fundamentals with clear explanations.'
+                }
+            ],
+            kids: [
+                {
+                    id: 'XqZsoesa55w',
+                    title: 'Baby Shark Dance | Most Viewed Video',
+                    category: 'Kids',
+                    duration: '2:17',
+                    description: 'The most-watched video on YouTube!'
+                }
+            ]
+        };
+
+        // DOM elements
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const videosContent = document.getElementById('videosContent');
+        const loadingState = document.getElementById('loadingState');
+        const noResults = document.getElementById('noResults');
+        const scrollTopBtn = document.getElementById('scrollTop');
+
+        // Current state
+        let currentCategory = 'all';
+        let currentSearchTerm = '';
+
+        // Initialize app
         document.addEventListener('DOMContentLoaded', function() {
-            const videoWrappers = document.querySelectorAll('.video-wrapper');
-            
-            videoWrappers.forEach(wrapper => {
-                const iframe = wrapper.querySelector('iframe');
-                
-                // Add loading indicator
-                const loadingDiv = document.createElement('div');
-                loadingDiv.style.cssText = `
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    z-index: 1;
-                `;
-                loadingDiv.innerHTML = '<div class="loading"></div>';
-                wrapper.appendChild(loadingDiv);
-                
-                // Remove loading when iframe loads
-                iframe.addEventListener('load', function() {
-                    loadingDiv.style.opacity = '0';
-                    setTimeout(() => loadingDiv.remove(), 300);
+            initializeApp();
+            setupEventListeners();
+            addAnimations();
+        });
+
+        function initializeApp() {
+            // Add loading animations to existing video cards
+            const videoCards = document.querySelectorAll('.video-card');
+            videoCards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('fade-in-up');
+                }, index * 100);
+            });
+
+            // Setup intersection observer for lazy loading
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-up');
+                    }
                 });
             });
-        });
 
-        // Add smooth scroll behavior
-        document.documentElement.style.scrollBehavior = 'smooth';
-
-        // Add hover effects for video cards
-        const videoCards = document.querySelectorAll('.video-card');
-        videoCards.forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px) scale(1.02)';
+            document.querySelectorAll('.section').forEach(section => {
+                observer.observe(section);
             });
+        }
+
+        function setupEventListeners() {
+            // Search functionality
+            searchBtn.addEventListener('click', handleSearch);
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    handleSearch();
+                }
+            });
+
+            // Category buttons
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    handleCategoryChange(btn.dataset.category);
+                });
+            });
+
+            // Scroll to top button
+            window.addEventListener('scroll', handleScroll);
+            scrollTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Header scroll effect
+            let lastScrollY = window.scrollY;
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                    header.style.transform = 'translateY(-100%)';
+                } else {
+                    header.style.transform = 'translateY(0)';
+                }
+                lastScrollY = window.scrollY;
+            });
+        }
+
+        function handleSearch() {
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            if (searchTerm === currentSearchTerm) return;
             
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
+            currentSearchTerm = searchTerm;
+            showLoading();
+            
+            setTimeout(() => {
+                if (searchTerm === '') {
+                    showAllContent();
+                } else {
+                    performSearch(searchTerm);
+                }
+            }, 500);
+        }
+
+        function handleCategoryChange(category) {
+            if (category === currentCategory) return;
+            
+            currentCategory = category;
+            currentSearchTerm = '';
+            searchInput.value = '';
+            
+            // Update active category button
+            categoryBtns.forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[data-category="${category}"]`).classList.add('active');
+            
+            showLoading();
+            
+            setTimeout(() => {
+                if (category === 'all') {
+                    showAllContent();
+                } else {
+                    filterByCategory(category);
+                }
+            }, 300);
+        }
+
+        function showLoading() {
+            videosContent.style.display = 'none';
+            noResults.style.display = 'none';
+            loadingState.style.display = 'block';
+        }
+
+        function showAllContent() {
+            loadingState.style.display = 'none';
+            noResults.style.display = 'none';
+            videosContent.style.display = 'block';
+            
+            // Add stagger animation
+            const sections = videosContent.querySelectorAll('.section');
+            sections.forEach((section, index) => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                setTimeout(() => {
+                    section.style.transition = 'all 0.6s ease';
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }, index * 100);
             });
-        });
+        }
+
+        function performSearch(searchTerm) {
+            // Simulate search functionality
+            const allSections = videosContent.querySelectorAll('.section');
+            let hasResults = false;
+
+            allSections.forEach(section => {
+                const sectionTitle = section.querySelector('.section-title').textContent.toLowerCase();
+                const videoCards = section.querySelectorAll('.video-card');
+                let sectionHasResults = false;
+
+                videoCards.forEach(card => {
+                    const title = card.querySelector('.video-title').textContent.toLowerCase();
+                    const description = card.querySelector('.video-description').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || description.includes(searchTerm) || sectionTitle.includes(searchTerm)) {
+                        card.style.display = 'block';
+                        sectionHasResults = true;
+                        hasResults = true;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                section.style.display = sectionHasResults ? 'block' : 'none';
+            });
+
+            loadingState.style.display = 'none';
+            
+            if (hasResults) {
+                videosContent.style.display = 'block';
+                noResults.style.display = 'none';
+            } else {
+                videosContent.style.display = 'none';
+                noResults.style.display = 'block';
+            }
+        }
+
+        function filterByCategory(category) {
+            const categoryMap = {
+                'music': ['music'],
+                'gaming': ['gaming'],
+                'education': ['education'],
+                'entertainment': ['entertainment'],
+                'kids': ['kids'],
+                'sports': ['sports'],
+                'tech': ['technology', 'science'],
+                'cooking': ['cooking'],
+                'travel': ['travel'],
+                'fitness': ['fitness'],
+                'comedy': ['entertainment', 'comedy']
+            };
+
+            const targetCategories = categoryMap[category] || [category];
+            const allSections = videosContent.querySelectorAll('.section');
+            let hasResults = false;
+
+            allSections.forEach(section => {
+                const sectionTitle = section.querySelector('.section-title').textContent.toLowerCase();
+                const shouldShow = targetCategories.some(cat => sectionTitle.includes(cat));
+                
+                if (shouldShow) {
+                    section.style.display = 'block';
+                    hasResults = true;
+                    
+                    // Show all cards in matching sections
+                    const videoCards = section.querySelectorAll('.video-card');
+                    videoCards.forEach(card => {
+                        card.style.display = 'block';
+                    });
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+
+            loadingState.style.display = 'none';
+            
+            if (hasResults) {
+                videosContent.style.display = 'block';
+                noResults.style.display = 'none';
+            } else {
+                videosContent.style.display = 'none';
+                noResults.style.display = 'block';
+            }
+        }
+
+        function handleScroll() {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            
+            // Parallax effect for hero section
+            const hero = document.querySelector('.hero-section');
+            if (hero) {
+                hero.style.transform = `translateY(${rate}px)`;
+            }
+            
+            // Show/hide scroll to top button
+            if (scrolled > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        }
+
+        function addAnimations() {
+            // Add hover effects for video cards
+            const videoCards = document.querySelectorAll('.video-card');
+            videoCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Add typing effect to search placeholder
+            const searchBox = document.getElementById('searchInput');
+            const placeholders = [
+                'Search thousands of videos...',
+                'Find music videos...',
+                'Discover gaming content...',
+                'Explore educational videos...',
+                'Search entertainment...'
+            ];
+            
+            let placeholderIndex = 0;
+            setInterval(() => {
+                placeholderIndex = (placeholderIndex + 1) % placeholders.length;
+                searchBox.placeholder = placeholders[placeholderIndex];
+            }, 3000);
+        }
+
+        // Performance optimizations
+        function throttle(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Apply throttling to scroll events
+        window.addEventListener('scroll', throttle(handleScroll, 16));
+
+        // Add service worker for offline functionality
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+
+    <!-- Schema.org structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "StreamVault",
+        "description": "Premium global video platform featuring music, gaming, education & entertainment content",
+        "url": "https://www.vinnesia.my.id",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.vinnesia.my.id/?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
     </script>
 </body>
 </html>
